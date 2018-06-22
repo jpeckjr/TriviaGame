@@ -12,6 +12,7 @@ initialScreen();
 $("body").on("click", ".start-button", function(event){
 	event.preventDefault();  
 	generateHTML();
+	
 	timerWrapper();
 
 }); 
@@ -106,9 +107,9 @@ var startScreen;
 var gameHTML;
 var counter = 30;
 var questionArray = ["Which philosopher is best know for the phrase <i>cogito ergo sum<i>?", "According to Plato, what is knowledge?", "What philosopher/logician/mathematician introduced the influential distinction between <i>sense<i> and <i>reference<i>?", "Which branch of philosophy is primarily concerned with the question of being?", "Transcendental idealism argues that...", "Metaphysics is the study of...?", "What philosopher wrote the controversial book <i>Being and Time<i>?", "What philosopher is know for changing the Hegalian Dialectic in favor of dialectical materialism?"];
-var answerArray = [["Jean-Paul Sartre", "Plato", "Socrates", "Descartes"], ["Justified belief","There is no such thing as true knowledge","That which can be proven","Opinion"], ["Immanuel Kant", "Paul Grice", "Donald Davidson", "Gottlob Frege"], ["Existentialism","Marxism","Platoism","Humanism"], ["There is an afterlife", "God is the ideal human", "Knowledge has foundations", "Our experience is based on our perceptions"], ["Knowledge","Politics","Ethics","Existence"], ["Jean-Paul Sartre", "Martin Heidegger", "Michel Foucault", "Maurice Merleau-Ponty"], ["Heraclitus","Immanuel Kant","John Searle","Karl Marx"]];
-var imageArray = ["<img class='center-block img-right' src='assets/images/Descartes.jpeg'>", "<img class='center-block img-right' src='assets/images/plato.jpg'>", "<img class='center-block img-right' src='assets/images/Frege.jpg'>", "<img class='center-block img-right' src='assets/images/QuestionofBeing.jpeg'>", "<img class='center-block img-right' src='assets/images/Tran.jpeg'>", "<img class='center-block img-right' src='assets/images/Metaphysics.jpeg'>", "<img class='center-block img-right' src='assets/images/MartinHeidegger.jpg'>", "<img class='center-block img-right' src='assets/images/KarlMarx.jpg'>"];
-var correctAnswers = ["D. Descartes", "A. justified belief ", "D. Gottlob Frege", "A. Existentialism", "D. Our knowledge is based on our perceptions", "D. Existence", "B. Martin Heidegger", "D. Karl Marx"];
+var answerArray = [["Jean-Paul Sartre", "Plato", "Socrates", "Descartes"], ["A justified belief","There is no such thing as true knowledge","That which can be proven","Opinion"], ["Immanuel Kant", "Paul Grice", "Donald Davidson", "Gottlob Frege"], ["Existentialism","Marxism","Platoism","Humanism"], ["There is an afterlife", "God is the ideal human", "Knowledge has foundations", "Our experience is based on our perceptions"], ["Knowledge","Politics","Ethics","Existence"], ["Jean-Paul Sartre", "Martin Heidegger", "Michel Foucault", "Maurice Merleau-Ponty"], ["Heraclitus","Immanuel Kant","John Searle","Karl Marx"]];
+var imageArray = ["<img class='center-block img-right' style= 'width:400px; height:300px;' src='assets/images/Descartes.jpeg'>", "<img class='center-block img-right' style= 'width:400px; height:300px;' src='assets/images/plato.jpg'>", "<img class='center-block img-right' style= 'width:400px; height:300px;' src='assets/images/Frege.jpg'>", "<img class='center-block img-right' style= 'width:400px; height:300px;' src='assets/images/QuestionofBeing.jpeg'>", "<img class='center-block img-right' style= 'width:400px; height:300px;' src='assets/images/Tran.jpeg'>", "<img class='center-block img-right' style= 'width:400px; height:300px;' src='assets/images/Metaphysics.jpeg'>", "<img class='center-block img-right' style= 'width:400px; height:300px;' src='assets/images/MartinHeidegger.jpg'>", "<img class='center-block img-right' style= 'width:400px; height:300px;' src='assets/images/KarlMarx.jpg'>"];
+var correctAnswers = ["D. Descartes", "A. A justified belief", "D. Gottlob Frege", "A. Existentialism", "D. Our experience is based on our perceptions", "D. Existence", "B. Martin Heidegger", "D. Karl Marx"];
 var questionCounter = 0;
 var selecterAnswer;
 var theClock;
